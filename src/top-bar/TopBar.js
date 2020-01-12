@@ -27,7 +27,7 @@ const HelpInfoLink = styled(ExternalLink)`
 `;
 
 const Container = styled.div`
-  background: black;
+  background: #455a64;
   color: white;
   display: flex;
   padding: 0 15px;

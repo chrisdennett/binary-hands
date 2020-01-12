@@ -8,7 +8,8 @@ const BinaryHands = ({ binary, sizeInfo }) => {
       <div
         className={"labApp--content"}
         style={{
-          padding: 0,
+          backgroundImage: `url("img/bg-tile.png")`,
+          paddingTop: 10,
           width: `${sizeInfo.width}px`,
           height: `${sizeInfo.height}px`
         }}
