@@ -1,0 +1,44 @@
+.binaryHands--controls {
+  display: flex;
+  flex-direction: column;
+  background: #2b383e;
+  color: white;
+}
+
+.binaryHands--controls--section {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.binaryHands--numberTextInput {
+  width: 130px;
+}
+
+.binaryHands--numberTextInput .mdc-text-field__input {
+  background-color: white;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+}
+
+.binaryHands--controls .mdc-icon-button:disabled {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.binaryHands--numberSection {
+  background: #111619;
+  padding: 10px;
+}
+
+.binaryHands--timerSection {
+  display: flex;
+  align-items: center;
+}
+.binaryHands--timerSection .mdc-button:disabled {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.binaryHands--timerSection .mdc-list-item--selected {
+  background-color: #e9ba3b !important;
+}

@@ -1,0 +1,35 @@
+.bindaryDisplay {
+  background: whitesmoke;
+  display: flex;
+}
+
+.binaryDisplay--digitColumn {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  flex: 1;
+}
+
+.binaryDisplay--digit {
+  color: black;
+  text-align: center;
+  padding: 10px 0;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.binaryDisplay--digit--colHeader {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  padding: 15px 0;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bindaryDisplay--binarySum {
+  text-align: center;
+  padding: 15px 5px;
+  color: white;
+  background: #455a64;
+}
