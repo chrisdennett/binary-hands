@@ -1,31 +1,32 @@
 import React from "react";
+import styled from "styled-components";
 // comps
 import Hands from "./Hands";
 
 const BinaryHands = ({ binary, sizeInfo }) => {
   return (
-    <div className={"labApp"}>
-      <div
-        className={"labApp--content"}
-        style={{
-          backgroundImage: `url("img/bg-tile.png")`,
-          paddingTop: 10,
-          width: `${sizeInfo.width}px`,
-          height: `${sizeInfo.height}px`
-        }}
-      >
-        <Hands
-          binary={binary}
-          colours={colours}
-          maxWidth={sizeInfo.width}
-          maxHeight={sizeInfo.height}
-        />
-      </div>
-    </div>
+    <Container
+      style={{
+        width: `${sizeInfo.width}px`,
+        height: `${sizeInfo.height}px`
+      }}
+    >
+      <Hands
+        binary={binary}
+        colours={colours}
+        maxWidth={sizeInfo.width}
+        maxHeight={sizeInfo.height}
+      />
+    </Container>
   );
 };
 
 export default BinaryHands;
+
+const Container = styled.div`
+  background-image: url("img/bg-tile.png");
+  padding-top: 10px;
+`;
 
 const colours = [
   "#D32F2F",
